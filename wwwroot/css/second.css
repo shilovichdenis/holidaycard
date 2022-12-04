@@ -96,7 +96,10 @@
 }
 
 .box-6 {
-    background-color: gray;
+    background-image: url(../images/christmas-tree-black.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box-7 {
