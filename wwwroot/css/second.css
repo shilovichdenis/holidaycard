@@ -32,6 +32,7 @@
   }
 
 .box {
+    overflow: hidden;
     position: relative;
     width: calc(100vh / 4);
     height: calc(100vh / 4);
@@ -62,11 +63,11 @@
 }
 
 .box-1 {
-    background-image: url(../images/ball.gif);
+    /* background-image: url(../images/ball.gif); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(35 31 32);
+    /* background-color: rgb(35 31 32); */
 }
 
 .box-2 {
@@ -118,5 +119,5 @@
 }
 
 .box-video{
-    width: 100%;
+    height: 100%;
 }
