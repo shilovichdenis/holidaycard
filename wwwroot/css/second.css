@@ -53,8 +53,7 @@
     text-decoration: underline;
 }
 
-.box-1 {
-}
+.box-1 {}
 
 .box-2 {
     background-image: url(../images/merry-christmas.gif);
@@ -63,7 +62,9 @@
     background-size: cover;
 }
 
-.box-3 {
+.box-3 {}
+
+.box-4 {
     background-color: #fff;
     background-image: url(../images/logo.png);
     background-position: center center;
@@ -71,22 +72,17 @@
     background-size: 60%;
 }
 
-.box-4 {
-}
-
 .box-5 {
     background: #fff;
 }
 
-.box-6 {
-}
+.box-6 {}
 
 .box-7 {
-}
-
-.box-8 {
     background-color: rgb(216 35 35);
 }
+
+.box-8 {}
 
 .box-img {
     width: 100%;
