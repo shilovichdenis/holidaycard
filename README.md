@@ -1,2 +1,2 @@
 # holidaycard
-[Holiday card](https://forwardmotors.github.io/holidaycard/index.html)
+[Holiday card](https://shilovichdenis.github.io/holidaycard/index)
