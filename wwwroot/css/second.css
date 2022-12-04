@@ -12,7 +12,6 @@
     align-items: center;
     margin: auto;
     height: 100vh;
-    background-color: #fab1a0;
     z-index: -99999;
 }
 
@@ -21,25 +20,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0ch;
 }
-@media screen and (max-width: 900px) {
-    .box-list {
-        grid-template-columns: 1fr 1fr;
-    }
-    .box{
-        width: 150px !important;
-        height: 150px !important;
-    }
-  }
 
 .box {
     overflow: hidden;
     position: relative;
-    width: calc(100vh / 4);
-    height: calc(100vh / 4);
+    width: calc(100vw / 4);
+    height: calc(100vh / 2);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: black;
 }
 
 .box:hover .box-hover {
@@ -53,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .6);
     opacity: 0;
     display: flex;
     color: white;
@@ -63,11 +54,6 @@
 }
 
 .box-1 {
-    /* background-image: url(../images/ball.gif); */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: rgb(35 31 32); */
 }
 
 .box-2 {
@@ -82,14 +68,10 @@
     background-image: url(../images/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 60%;
 }
 
 .box-4 {
-    background-image: url(../images/christmast-tree.gif);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .box-5 {
@@ -97,27 +79,19 @@
 }
 
 .box-6 {
-    background-image: url(../images/christmas-tree-black.gif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .box-7 {
-    background-image: url(../images/santa-claus.gif);
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .box-8 {
     background-color: rgb(216 35 35);
 }
 
-.box-img{
+.box-img {
     width: 100%;
 }
 
-.box-video{
+.box-video {
     height: 100%;
 }
