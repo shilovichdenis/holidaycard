@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background-color: #fab1a0;
+    z-index: -99999;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transition: 3s;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-front-active {
+    transform: rotateY(180deg);
+}
+
+.card-back-hidden {
+    transform: rotateY(360deg) !important;
+}
+
+.card-front,
+.card-back {
+    transition: inherit;
+    perspective: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 2px 2px 8px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front {
+    background: darkred;
+    z-index: 15;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: darkred;
+}
+
+.part {
+    position: absolute;
+    background: violet;
+    z-index: 9;
+}
+
+.part-left,
+.part-right {
+    height: 100%;
+    width: 50%;
+    top: 0;
+}
+
+.part-top,
+.part-bottom {
+    width: 100%;
+}
+
+.part-top {
+    background: darkred;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    height: 60%;
+    transform: translateY(-100%);
+    transform-origin: bottom;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    border: 2px solid rgba(0, 0, 0, .2);
+    z-index: 7;
+}
+
+.part-right {
+    right: 0;
+    clip-path: polygon(100% 100%, 0% 50%, 100% 0%);
+}
+
+.part-bottom {
+    height: 100%;
+    bottom: 0;
+    clip-path: polygon(0% 100%, 50% 40%, 100% 100%);
+}
+
+.part-left {
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.part-top-close {
+    transition: 1s;
+    transform: translateY(-100%) rotateX(180deg);
+    z-index: 10;
+}
+
+.message {
+    background-color: #fff;
+    width: 180px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -90px;
+    margin-top: -10px;
+    z-index: 8;
+    padding: 5px;
+    transition: 1s;
+}
+
+.message-text {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-hide {
+    transform: translateY(20px);
+}
