@@ -22,3 +22,14 @@ $(document).ready(function () {
         }
     });
 });
+
+
+$(document).ready(function () {
+
+    $('#change-language').on('click', function () {
+        $('.text').toggleClass('lang-hide');
+    });
+    $('.choose-language').on('click', function () {
+        $('.wrapper-hover').addClass('display-none');
+    });
+});

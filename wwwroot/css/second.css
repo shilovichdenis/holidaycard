@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-weight: 600;
 }
 
@@ -12,7 +12,58 @@
     align-items: center;
     margin: auto;
     height: 100vh;
-    z-index: -99999;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.wrapper-hover {}
+
+.wrapper-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    opacity: .8;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.btn-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -300px;
+    margin-top: -100px;
+}
+
+.change-btn {
+    transition: .5s;
+    border-radius: 15px;
+    border: 4px solid white;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.change-btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .box-list {
@@ -44,13 +95,27 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     opacity: 0;
-    display: flex;
+}
+
+.text {
     color: white;
+    padding: 15%;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: underline;
+    text-align: center;
+}
+
+.lang-hide {
+    display: none;
 }
 
 .box-1 {}
@@ -64,12 +129,16 @@
 
 .box-3 {}
 
+.box-3 .box-video {
+    margin-right: 50% !important;
+}
+
 .box-4 {
     background-color: #fff;
     background-image: url(../images/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 80%;
 }
 
 .box-5 {
