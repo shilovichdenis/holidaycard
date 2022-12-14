@@ -25,11 +25,12 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-
-    $('#change-language').on('click', function () {
-        $('.text').toggleClass('lang-hide');
+    $('.choose-eng').on('click', function () {
+        $('.lang-rus').addClass('lang-hide');
+        $('.wrapper-hover').addClass('display-none');
     });
-    $('.choose-language').on('click', function () {
+    $('.choose-rus').on('click', function () {
+        $('.lang-eng').addClass('lang-hide');
         $('.wrapper-hover').addClass('display-none');
     });
 });
